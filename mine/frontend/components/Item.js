@@ -8,7 +8,7 @@ import PriceTag from "./styles/PriceTag";
 
 import formatMoney from "../lib/formatMoney";
 
-export default class Item extends React.Component {
+class Item extends React.Component {
   static propTypes = {
     item: PropTypes.object.isRequired
   };
@@ -48,3 +48,5 @@ export default class Item extends React.Component {
     );
   }
 }
+export default Item;
+export { ALL_ITEMS_QUERY };
