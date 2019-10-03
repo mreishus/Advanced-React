@@ -8,6 +8,8 @@ import PriceTag from "./styles/PriceTag";
 
 import formatMoney from "../lib/formatMoney";
 
+import DeleteItem from "./DeleteItem";
+
 class Item extends React.Component {
   static propTypes = {
     item: PropTypes.object.isRequired
@@ -42,7 +44,7 @@ class Item extends React.Component {
             <a>Edit Pencil</a>
           </Link>
           <button>Add To Cart</button>
-          <button>Delete</button>
+          <DeleteItem id={item.id}>Delete Item</DeleteItem>
         </div>
       </ItemStyles>
     );

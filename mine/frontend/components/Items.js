@@ -32,7 +32,7 @@ const ItemsList = styled.div`
   margin: 0 auto;
 `;
 
-export default class Items extends React.Component {
+class Items extends React.Component {
   render() {
     return (
       <Center>
@@ -53,3 +53,6 @@ export default class Items extends React.Component {
     );
   }
 }
+
+export default Items;
+export { ALL_ITEMS_QUERY };
